@@ -1,16 +1,15 @@
 import Head from "next/head";
 import Avatar from "../components/Avatar";
-import { MicrophoneIcon, MoonIcon, SunIcon, ViewGridIcon } from "@heroicons/react/solid";
+import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import { SearchIcon } from "@heroicons/react/outline";
 import Footer from "../components/Footer";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { useRouter } from "next/router";
 
 export default function Home() {
   const Router = useRouter();
   const searchInputRef = useRef(null);
-  // const [darkTheme, setdarkTheme] = useState(false);
 
   const search = (e) => {
     e.preventDefault();
